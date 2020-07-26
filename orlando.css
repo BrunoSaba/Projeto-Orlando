@@ -60,10 +60,15 @@ header .header-black li a { width: 32px;
 
 header #logo { position: absolute;
 top: 22px;
-left: 100px; }
+left: 100px;
+z-index: 100;
+}
+
+
 #menu li {
    display: inline-block;
    font-family: 'open_sans';
+   z-index: 10;
  }
 
  #menu li.Search {
@@ -133,6 +138,7 @@ left: 100px; }
 
 }
 
+
 #News hr {
   position: relative;
   border: #fde192 solid 2px;
@@ -153,8 +159,14 @@ left: -147px;
 
  }
  #News .thumbnails time {
+      color: #a7a7a7
 
-
+ }
+ #news .thumbnails .item-inner {
+   padding: 10px;
+ }
+ #news .thumbnails .item-inner img {
+   width: 100%
  }
 #estatisticas {
   background-color: #5e299a;
@@ -184,16 +196,16 @@ left: -147px;
   font-family: 'OpenSans-Light';
   font-size: 48px;
   text-align: center;
-  top: 60;
-left: 180;
+  top: 30;
+left: 212;
  }
  #call-to-action hr {
   border:#FDE192 solid 4px;
   width: 200px;
   margin: 0 auto;
   position: relative;
-    top: 118;
-    left: -380;
+    top: 86;
+    left: -362;
  }
  #call-to-action p {
 
@@ -218,6 +230,11 @@ left: 348px;
    position: relative;
     left: 500;
    }
+   video {
+    object-fit: contain;
+    position: relative;
+left: 255px;
+}
 footer {
   margin-top: 110px;
  }
